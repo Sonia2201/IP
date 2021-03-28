@@ -1,0 +1,28 @@
+/*p{
+
+    color:white;
+    font-size:130%;
+    background-color:indianred;
+}
+h1{color:indigo}
+#intro{color:rgb(19, 12, 19);
+background-color: teal;}*/
+p {
+    
+    color:rgb(238, 209, 209);
+    width: 500px;
+    font-size:180%;
+   
+    background-color:indianred;
+}
+body {
+
+
+    width: 600px;
+    margin: 0 auto;
+    background-color:#e6cde6 ;
+    
+    padding: 0 20px 20px 20px;
+    border: 2px solid black;   
+}
+ 
