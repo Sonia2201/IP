@@ -1,0 +1,201 @@
+<!DOCTYPE html>    
+<html>
+ <title>Rom</title>
+<head>   
+    
+
+   
+  <link rel="stylesheet" type="text/css" href="mapsss.css">
+        <style>
+
+            #content-wrapper{
+              display:table;
+            }
+            
+            #content{
+              display:table-row;
+            }
+            
+            #content>div{
+              display:table-cell
+            }
+            
+          
+            #content-wrapper{
+              width:100%;
+              height:300%;
+              top:100px;
+              left:0px;
+              position:absolute;
+
+            }
+            #map{
+                width:100%;
+              height:100%;
+              top:50px;
+              left:650px;
+              position:absolute;
+
+            }
+            #nav{
+              width: 600px;
+              background:rgb(235, 182, 182);
+            }
+            #body{
+              background:rgb(204, 126, 126);
+            
+            }
+            
+            
+
+            </style>
+          
+          
+            
+            
+
+</head> 
+<body>
+
+
+   <center> <p>Universitatea “Alexandru Ioan Cuza” din Iași</p> </center>
+
+
+   <div id="content-wrapper">
+    <div id="content">
+      <div id="nav">
+        
+        <div>
+
+
+            <h3>Campusuri studențesti:</h3>
+    
+            <ul>
+    
+                <li> 1. “Titu Maiorescu” (căminele C5, C6, C7 și C8)</li>
+    
+    
+                <li> 2. “Codrescu” (căminele C11, C12 și C13)</li>
+    
+    
+                <li> 3. “Târgușor-Copou” (căminele C1, C2, C3 și C4)</li>
+    
+                <li> 4. Căminul “Gaudeamus”</li>
+    
+    
+                <li> 5. Căminul “Akademos”</li>
+    
+    
+                <li> 6. Căminul “Buna Vestire”</li>
+    
+    
+    
+            </ul>
+    
+        </div>
+    <div>
+        <h3>Adresele:</h3>
+        <ul>
+    
+            <li> 1. “Titu Maiorescu” - strada Titu Maiorescu Nr. 7-9, Iași 700461</li>
+    
+    
+            <li> 2. “Codrescu” - strada Codrescu, nr. 10, Iași 700481</li>
+    
+    
+            <li> 3. “Târgușor-Copou” - strada Stoicescu nr.1-4, Iași 700496</li>
+    
+            <li> 4. Căminul “Gaudeamus” - strada Codrescu nr.1, Iași 700479</li>
+    
+    
+            <li>5. Căminul “Akademos” - strada Păcurari, strada Anastasie Fătu nr. 1, Iași 700511</li>
+    
+    
+            <li> 6. Caminul “Buna Vestire” - strada Iordache Lozonschi nr.9, Iasi 707085</li>
+    
+    
+    
+        </ul>
+    
+    </div>
+    <div>
+        <h4>Cum să ajungi de la Gara Iași:</h4>
+    
+        <ul>
+    
+            <li>  “Titu Maiorescu” :  </li>  
+            <ul>
+                <li> (stația: Gara) autobuzul 36 -> (stația: Universitate)</li>
+    
+                <li>  (stația: Gara) tramvaiul 3, 6, 7 ->(stația: Piața Unirii) -> tramvaiul 1, 8, 9, 13 (stația: Gara)</li>  
+    
+    
+            </ul>
+            <li>  “Codrescu” : </li>  
+            <ul>
+                <li> (stația: Gara) autobuzul 36 ->(stația: Universitate)</li>
+    
+                <li>  (stația: Gara) tramvaiul 3, 6, 7->(stația: Piața Unirii) -> tramvaiul 1, 8, 9, 13</li>  
+    
+            </ul>
+            <li>  “Târgușor-Copou”:  </li>  
+            <ul>
+                <li> (stația: Gara) autobuzul 36 ->(stația: Stadion)</li>
+    
+                <li>  (stația: Gara) tramvaiul 3, 6, 7 ->(stația: Piața Unirii) -> tramvaiul 1, 8, 9, 13 (stația: Stadion</li>  
+    
+    
+            </ul>
+            <li>  Căminul “Gaudeamus”: </li>  
+            <ul>
+                <li> (stația: Gara) autobuzul 36 (stația: Universitate)</li>
+    
+                <li> (stația: Gara) tramvaiul 3, 6, 7 ->(stația: Piața Unirii) -> tramvaiul 1, 8, 9, 13 (stația: Stadion)</li>  
+    
+    
+            </ul>
+            <li>  Căminul ”Akademus”: </li>  
+            <ul>
+                <li> 12 min pe jos</li>
+    
+            </ul>
+            <li>  “Buna Vestire”:</li>  
+            <ul>
+                <li> 18 min pe jos</li>
+                <li> (statia: Gara) tramvaiul 3, 7, 6 ->(stația: Piața Unirii) -> 7 min pe jos</li>
+    
+            </ul>
+    
+    
+    
+    
+        </ul>
+    
+    </div>
+      </div>
+      <div id="body">
+        <script src="mapss.js">
+        </script>
+  <button id="btn-location">Go to my Location</button>
+        
+        <div id="map" style="width: 650px;;height:600px;background:yellow">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21703.752801117527!2d27.6014634!3d47.15845959999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sro!4v1618793301141!5m2!1sen!2sro"  width="650" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+
+           <script src="https://maps.googleapis.com/maps/api/js"></script>
+        
+           <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5pnqb1-EBPUf9_cdONUZiNeEQtmKT66g&callback=initMap"></script>
+        </div>
+       
+
+    
+        
+      </div>
+    </div>
+  </div>
+   
+
+    
+</body>
+
+</html> 
